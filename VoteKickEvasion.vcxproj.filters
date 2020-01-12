@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Evasion">
+      <UniqueIdentifier>{fd646aeb-db11-4451-b9bb-f6164065ad9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hazedumper">
+      <UniqueIdentifier>{25c185ee-f9d1-44e4-843c-27ab4d9b9526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mem">
+      <UniqueIdentifier>{240f7bef-6969-42d1-81a6-61a8fa85fefd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\mem\mem.cpp">
+      <Filter>Mem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evasion\Evade.cpp">
+      <Filter>Evasion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dllmain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\mem\mem.h">
+      <Filter>Mem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\haze\haze.hpp">
+      <Filter>Hazedumper</Filter>
+    </ClInclude>
+    <ClInclude Include="src\evasion\Evade.h">
+      <Filter>Evasion</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
