@@ -161,10 +161,12 @@
   <ItemGroup>
     <ClCompile Include="src\dllmain.cpp" />
     <ClCompile Include="src\evasion\Evade.cpp" />
+    <ClCompile Include="src\addrHandle\AddrHandle.cpp" />
     <ClCompile Include="src\mem\mem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\evasion\Evade.h" />
+    <ClInclude Include="src\addrHandle\AddrHandle.h" />
     <ClInclude Include="src\haze\haze.hpp" />
     <ClInclude Include="src\mem\mem.h" />
   </ItemGroup>

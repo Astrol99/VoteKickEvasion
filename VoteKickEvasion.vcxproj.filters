@@ -10,6 +10,9 @@
     <Filter Include="Mem">
       <UniqueIdentifier>{240f7bef-6969-42d1-81a6-61a8fa85fefd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AddrHandle">
+      <UniqueIdentifier>{e73d1dfe-2a5f-435b-9798-24e2455b996e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\mem\mem.cpp">
@@ -19,6 +22,9 @@
       <Filter>Evasion</Filter>
     </ClCompile>
     <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\addrHandle\AddrHandle.cpp">
+      <Filter>AddrHandle</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\mem\mem.h">
@@ -29,6 +35,9 @@
     </ClInclude>
     <ClInclude Include="src\evasion\Evade.h">
       <Filter>Evasion</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addrHandle\AddrHandle.h">
+      <Filter>AddrHandle</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
