@@ -1,7 +1,7 @@
 // dllmain.cpp : Defines the entry point for the DLL application.
 #include <iostream>
 #include <Windows.h>
-#include "evasion/Evade.h"
+#include "Evasion/Evade.h"
 
 FILE* CreateConsole() {
 
@@ -9,12 +9,14 @@ FILE* CreateConsole() {
     FILE* f;
     freopen_s(&f, "CONOUT$", "w", stdout);
 
-    std::cout << "Initalizing ??????????..." << std::endl;
+    std::cout << "Initalizing ??????????...\n" << std::endl;
 
     return f;
 }
 
 void CleanUp(FILE* f, HMODULE hModule) {
+
+    std::cout << "[*] Cleaning up..." << std::endl;
 
     fclose(f);
     FreeConsole();
