@@ -38,9 +38,17 @@ void FindAddr() {
 }
 // ================================================================================================================
 
+void PrintPlayers() {
+
+
+}
+
 void hackLoop() {
 	// Get addresses and check health for debugging purposes
 	FindAddr();
+
+	// Print all players in current match
+	PrintPlayers();
 
 	// Main loop
 	while (true) {

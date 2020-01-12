@@ -9,7 +9,7 @@ FILE* CreateConsole() {
     FILE* f;
     freopen_s(&f, "CONOUT$", "w", stdout);
 
-    std::cout << "Initalizing ??????????...\n" << std::endl;
+    std::cout << "Initalizing evade...\n" << std::endl;
 
     return f;
 }
@@ -44,7 +44,13 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     switch (ul_reason_for_call)
     {
     case DLL_PROCESS_ATTACH:
-        CloseHandle(CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)Thread, hModule, 0, nullptr));
+    {
+        HANDLE hThread = nullptr;
+        hThread = CreateThread(nullptr, 0, (LPTHREAD_START_ROUTINE)Thread, hModule, 0, nullptr);
+        if (hThread) {
+            CloseHandle(hThread);
+        }
+    }
     case DLL_THREAD_ATTACH:
     case DLL_THREAD_DETACH:
     case DLL_PROCESS_DETACH:
